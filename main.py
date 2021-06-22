@@ -1,19 +1,28 @@
-A = int(input('digite o 1º lado do triângulo:'))
-B = int(input('digite o 2º lado do triângulo:'))
-C = int(input('digite o 3º lado do triângulo:'))
+print('CALCULADORA')
+print('+ Adição')
+print('- Subtração')
+print('* Multiplicação')
+print('/ Divisão')
+print('Pressione outra tecla para sair!')
 
-if (A > 0 ) and (B > 0) and (C > 0):
-    if (A + B > C) and (A + C > B) and (B + C > A):
-    # Se  voce chegou ate aqui, e porque o triangulo e válido!
-         if A != B and A != C and B != C:
-             print('Triangulo escaleno!')
-         else:
-             if A == B and  A == C and B == C:
-                 print('Triangulo equilatero!')
-             else:
-                 print('Triangulo isosceles!')
-    else:
-        print('Ao menos um dos valores não servem para formar um triangulo')
+op = input('Qual operação deseja fazer?')
+if op == '+' or op == '-' or op == '*' or op == '/':
+    x = int(input('Digite o primeiro valor:'))
+    y =int(input('Digite o segundo valor:'))
 
+if (op == '+'):
+    res = x + y
+    print('Resultado: {} + {} = {}'.format(x, y, res))
+elif(op == '-'):
+    res = x - y
+    print('Resultado: {} - {} = {}'.format(x, y, res))
+elif (op == '*'):
+    res = x * y
+    print('Resultado: {} * {} = {}'.format(x, y, res))
+elif (op == '/'):
+    res = x / y
+    print('Resultado: {} / {} = {}'.format(x, y, res))
 else:
-    print('Ao menos um dos valores não servem para formar um triangulo')
+    print('Operação invalida.')
+
+print('Encerrando o programa...')
