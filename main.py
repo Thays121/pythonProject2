@@ -24,7 +24,7 @@ while (op != 's'):
         res = x / y
         print('Resultado: {} / {} = {}'.format(x, y, res))
     else:
-    print('Operação invalida.')
+        print('Operação invalida.')
 
     op = input('Qual operação deseja fazer?')
     if op == '+' or op == '-' or op == '*' or op == '/':
